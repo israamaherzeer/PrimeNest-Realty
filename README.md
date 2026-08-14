@@ -253,22 +253,11 @@ Success and error feedback.
 📸 Screenshots
 
 <img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/f7fb95b9-ea46-42d8-8db0-539457fa7f4e" />
-![Uploading Screenshot 2026-08-14 174101.png…]()
 <img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/c1c53c88-0079-4223-a8b3-dc18e77b3ece" />
-![Uploading Screenshot 2026-08-14 174138.png…]()
+<img width="1902" height="908" alt="Screenshot 2026-08-14 174101" src="https://github.com/user-attachments/assets/e4d93120-f742-46a3-a6a7-eeefd89eccec" />
 <img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/7ff94ae0-69fc-480d-b3ee-d0d76fcfb9e0" />
 <img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/b44c5cb0-a264-4f3a-acc9-9e6dfb4df24a" />
 <img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/437f1a70-bf22-47d5-9c6e-878aee810b11" />
-<img width="1903" height="910" alt="Screenshot 2026-08-14 174320" src="https://github.com/user-attachments/assets/6fdd06b7-8035-4f6b-9c67-002cdb72f5d0" />
-<img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/22cb1aed-866d-4f9c-b27b-91ccdcd871ee" />
-
-
-
-
-
-
-
-
 
 
 
@@ -277,5 +266,4 @@ Success and error feedback.
 
 🌐 Live Demo
 
-Live Demo: [Add deplo<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/acef77be-fb8c-4881-9aa7-49aeaeb9ce41" /><img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/b3c25865-d9b7-4e34-b5d6-ca602da58876" />
-<img width="1903" height="910" alt="Screenshot 2026-08-14 174320" src="https://github.com/user-attachments/assets/5715ce4d-b813-410f-bebf-8cfd0eded517" />
+Live Demo:
