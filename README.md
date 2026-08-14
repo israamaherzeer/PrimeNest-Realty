@@ -76,7 +76,7 @@ Modern ES6+ JavaScript — Modern syntax and development practices.
 Follow these steps to run the project locally:
 
 # Clone the repository
-git clone <>
+git clone <https://github.com/israamaherzeer/PrimeNest-Realty.git>
 
 # Navigate to the project directory
 cd primenest_final
