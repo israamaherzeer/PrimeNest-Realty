@@ -1,0 +1,90 @@
+@reference "../../index.css";
+.about-page {
+  @apply pt-24 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen;
+}
+.about-header {
+  @apply text-center mb-16;
+}
+.about-title {
+  @apply text-4xl md:text-5xl font-heading font-bold text-primary mb-4;
+}
+.about-subtitle {
+  @apply text-muted text-lg max-w-3xl mx-auto;
+}
+.about-content-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24;
+}
+.about-image {
+  @apply rounded-2xl shadow-xl w-full h-[500px] object-cover;
+}
+.about-section-title {
+  @apply text-3xl font-heading font-bold text-primary mb-6;
+}
+.about-section-desc {
+  @apply text-muted mb-6 leading-relaxed;
+}
+.about-section-desc-last {
+  @apply text-muted leading-relaxed;
+}
+.about-stats-container {
+  @apply bg-primary text-white rounded-3xl p-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center;
+}
+.about-stat-icon {
+  @apply h-10 w-10 text-gold mx-auto mb-4;
+}
+.about-stat-value {
+  @apply text-4xl font-bold font-heading mb-2;
+}
+.about-stat-label {
+  @apply text-gray-300;
+}
+
+
+@media (max-width: 640px) {
+  .about-page {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .about-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-content-grid {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-image {
+    height: 280px;
+  }
+
+  .about-section-title {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-stats-container {
+    padding: 2rem 1rem;
+    gap: 1.5rem 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .about-stat-value {
+    font-size: 2rem;
+  }
+
+  .about-stat-label {
+    font-size: .875rem;
+  }
+}

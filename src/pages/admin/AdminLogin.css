@@ -1,0 +1,44 @@
+@reference "../../index.css";
+.admin-login-page {
+  @apply min-h-screen bg-background flex flex-col justify-center py-12 sm:px-6 lg:px-8;
+}
+.admin-login-header {
+  @apply sm:mx-auto sm:w-full sm:max-w-md text-center;
+}
+.admin-login-icon {
+  @apply mx-auto h-12 w-12 text-gold;
+}
+.admin-login-title {
+  @apply mt-6 text-center text-3xl font-heading font-bold text-primary;
+}
+.admin-login-subtitle {
+  @apply mt-2 text-center text-sm text-muted;
+}
+.admin-login-form-container {
+  @apply mt-8 sm:mx-auto sm:w-full sm:max-w-md;
+}
+.admin-login-card {
+  @apply bg-white py-8 px-4 shadow sm:rounded-2xl sm:px-10 border border-gray-100;
+}
+.admin-login-form {
+  @apply space-y-6;
+}
+.admin-login-error {
+  @apply bg-red-50 border border-red-200 text-red-600 px-4 py-3 rounded-lg text-sm;
+}
+.admin-login-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+.admin-login-input-wrapper {
+  @apply mt-1 relative;
+}
+.admin-login-input {
+  @apply appearance-none block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-gold focus:border-gold sm:text-sm;
+}
+.admin-login-input-icon {
+  @apply absolute left-3 top-2.5 h-5 w-5 text-gray-400;
+}
+.admin-login-btn {
+  @apply w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-primary hover:bg-gold transition-colors focus:outline-none disabled:opacity-70;
+}
+

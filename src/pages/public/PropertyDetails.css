@@ -1,0 +1,328 @@
+@reference "../../index.css";
+.property-details-page {
+  @apply pt-28 pb-24 bg-background min-h-screen;
+}
+.property-details-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+.loading-screen {
+  @apply min-h-screen pt-28 flex justify-center items-center;
+}
+.loading-spinner-large {
+  @apply animate-spin rounded-full h-12 w-12 border-b-2 border-gold;
+}
+.not-found-screen {
+  @apply min-h-screen pt-28 flex flex-col justify-center items-center;
+}
+.not-found-title {
+  @apply text-3xl font-bold text-primary mb-4;
+}
+.not-found-link {
+  @apply text-gold hover:underline;
+}
+.pd-header {
+  @apply flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4;
+}
+.pd-tags {
+  @apply flex items-center gap-3 mb-2;
+}
+.pd-tag-status {
+  @apply px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white;
+}
+.pd-tag-status-sale {
+  @apply bg-primary;
+}
+.pd-tag-status-rent {
+  @apply bg-gold;
+}
+.pd-tag-type {
+  @apply text-sm text-muted uppercase tracking-wider font-semibold;
+}
+.pd-title {
+  @apply text-3xl md:text-5xl font-heading font-bold text-primary mb-2;
+}
+.pd-address {
+  @apply text-muted flex items-center gap-2 text-lg;
+}
+.pd-address-icon {
+  @apply h-5 w-5 text-gold;
+}
+.pd-price-container {
+  @apply text-left md:text-right;
+}
+.pd-price {
+  @apply text-4xl font-bold text-primary;
+}
+.pd-price-period {
+  @apply text-xl text-muted font-normal;
+}
+.pd-gallery {
+  @apply mb-12;
+}
+.pd-main-image-container {
+  @apply aspect-video md:aspect-[21/9] rounded-2xl overflow-hidden mb-4 bg-gray-200 shadow-md;
+}
+.pd-main-image {
+  @apply w-full h-full object-cover transition-opacity duration-300;
+}
+.pd-no-image {
+  @apply w-full h-full flex items-center justify-center text-gray-400;
+}
+.pd-thumbnails {
+  @apply flex gap-4 overflow-x-auto pb-2;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+.pd-thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+.pd-thumbnails::-webkit-scrollbar-track {
+  background: transparent;
+}
+.pd-thumbnails::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 20px;
+}
+.pd-thumbnail-btn {
+  @apply relative flex-shrink-0 w-32 h-24 rounded-lg overflow-hidden border-2 transition-colors;
+}
+.pd-thumbnail-active {
+  @apply border-gold;
+}
+.pd-thumbnail-inactive {
+  @apply border-transparent hover:border-gray-300;
+}
+.pd-thumbnail-img {
+  @apply w-full h-full object-cover;
+}
+.pd-content-grid {
+  @apply grid grid-cols-1 lg:grid-cols-3 gap-12;
+}
+.pd-main-details {
+  @apply lg:col-span-2 space-y-12;
+}
+.pd-key-features {
+  @apply bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 flex flex-wrap justify-between gap-6;
+}
+.pd-feature-item {
+  @apply flex items-center gap-4;
+}
+.pd-feature-icon-wrapper {
+  @apply bg-background p-3 rounded-full;
+}
+.pd-feature-icon {
+  @apply h-6 w-6 text-gold;
+}
+.pd-feature-label {
+  @apply text-sm text-muted;
+}
+.pd-feature-value {
+  @apply text-xl font-bold text-primary;
+}
+.pd-section-title {
+  @apply text-2xl font-heading font-bold text-primary mb-4;
+}
+.pd-description-content {
+  @apply text-muted max-w-none text-lg leading-relaxed;
+}
+.pd-amenities-title {
+  @apply text-2xl font-heading font-bold text-primary mb-6;
+}
+.pd-amenities-grid {
+  @apply grid grid-cols-2 md:grid-cols-3 gap-4;
+}
+.pd-amenity-item {
+  @apply flex items-center gap-3;
+}
+.pd-amenity-icon-wrapper {
+  @apply bg-gold/10 p-1 rounded-full text-gold;
+}
+.pd-amenity-icon {
+  @apply h-4 w-4;
+}
+.pd-amenity-label {
+  @apply text-gray-700 font-medium;
+}
+.pd-sidebar {
+  @apply space-y-8;
+}
+.pd-booking-card {
+  @apply bg-white rounded-3xl p-8 shadow-xl border border-gray-100 text-center sticky top-28;
+}
+.pd-booking-title {
+  @apply text-xl font-bold text-primary mb-2;
+}
+.pd-booking-desc {
+  @apply text-muted text-sm mb-8;
+}
+.pd-booking-btn-primary {
+  @apply w-full bg-primary text-white py-4 rounded-xl font-medium hover:bg-gold transition-colors text-lg mb-4 shadow-sm;
+}
+.pd-booking-btn-secondary {
+  @apply w-full bg-background text-primary border border-gray-200 py-4 rounded-xl font-medium hover:border-primary transition-colors text-lg;
+}
+.pd-agent-card {
+  @apply bg-white rounded-3xl p-6 shadow-sm border border-gray-100;
+}
+.pd-agent-header {
+  @apply text-lg font-bold text-primary mb-6 border-b border-gray-100 pb-4;
+}
+.pd-agent-profile {
+  @apply flex items-center gap-4 mb-6;
+}
+.pd-agent-photo-wrapper {
+  @apply w-16 h-16 rounded-full overflow-hidden bg-gray-100 shrink-0;
+}
+.pd-agent-photo {
+  @apply w-full h-full object-cover;
+}
+.pd-agent-no-photo {
+  @apply w-full h-full flex items-center justify-center text-xs text-gray-400;
+}
+.pd-agent-name {
+  @apply font-bold text-primary text-lg;
+}
+.pd-agent-position {
+  @apply text-sm text-gold;
+}
+.pd-agent-contact {
+  @apply space-y-3;
+}
+.pd-agent-contact-item {
+  @apply flex items-center gap-3 text-gray-600 text-sm;
+}
+.pd-agent-contact-icon {
+  @apply h-4 w-4 text-gray-400;
+}
+.pd-agent-contact-link {
+  @apply hover:text-gold transition-colors;
+}
+
+
+
+.pd-title,
+.pd-address,
+.pd-description-content,
+.pd-agent-contact-link {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  .property-details-page {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .property-details-container {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .pd-header {
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+  }
+
+  .pd-tags {
+    flex-wrap: wrap;
+  }
+
+  .pd-title {
+    font-size: 1.9rem;
+    line-height: 1.15;
+  }
+
+  .pd-address {
+    align-items: flex-start;
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+
+  .pd-price-container {
+    width: 100%;
+    text-align: left;
+  }
+
+  .pd-price {
+    font-size: 2rem;
+  }
+
+  .pd-gallery {
+    margin-bottom: 2rem;
+  }
+
+  .pd-main-image-container {
+    aspect-ratio: 4 / 3;
+    border-radius: 1rem;
+  }
+
+  .pd-thumbnail-btn {
+    width: 88px;
+    height: 66px;
+  }
+
+  .pd-content-grid {
+    gap: 2rem;
+  }
+
+  .pd-main-details {
+    gap: 2rem;
+  }
+
+  .pd-key-features {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .pd-feature-item {
+    gap: .65rem;
+  }
+
+  .pd-feature-icon-wrapper {
+    padding: .65rem;
+  }
+
+  .pd-feature-value {
+    font-size: 1rem;
+  }
+
+  .pd-description-content {
+    font-size: 1rem;
+  }
+
+  .pd-amenities-grid {
+    grid-template-columns: 1fr;
+    gap: .75rem;
+  }
+
+  .pd-booking-card {
+    position: static;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+  }
+
+  .pd-agent-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+  }
+
+  .pd-agent-profile {
+    align-items: flex-start;
+  }
+
+  .pd-agent-contact-item {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+  .pd-content-grid {
+    gap: 2rem;
+  }
+
+  .pd-booking-card {
+    position: static;
+  }
+}

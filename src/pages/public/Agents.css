@@ -1,0 +1,45 @@
+@reference "../../index.css";
+.agents-page {
+  @apply pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen;
+}
+.agents-header {
+  @apply text-center mb-16;
+}
+.agents-title {
+  @apply text-4xl md:text-5xl font-heading font-bold text-primary mb-4;
+}
+.agents-subtitle {
+  @apply text-muted text-lg max-w-2xl mx-auto;
+}
+.agents-loading {
+  @apply flex justify-center items-center h-64;
+}
+.agents-spinner {
+  @apply animate-spin rounded-full h-12 w-12 border-b-2 border-gold;
+}
+.agents-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8;
+}
+
+
+@media (max-width: 640px) {
+  .agents-page {
+    padding-top: 6.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .agents-title {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .agents-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .agents-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

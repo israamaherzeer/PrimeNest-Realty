@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1C1C1C;
+  --color-gold: #B08A45;
+  --color-background: #FAF8F3;
+  --color-white: #FFFFFF;
+  --color-text-main: #333333;
+  --color-muted: #777777;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-main font-sans antialiased;
+  }
+}
+
+/* GSAP Animations utilities */
+.reveal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .properties-page,
+  .property-details-page,
+  .about-page,
+  .contact-page,
+  .agents-page {
+    overflow-x: hidden;
+  }
+}
