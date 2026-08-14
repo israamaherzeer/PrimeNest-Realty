@@ -11,6 +11,18 @@ The public-facing website allows visitors to explore available properties, view 
 The platform also includes a dedicated Admin Portal where authorized administrators can manage properties, create and manage viewing slots, review customer viewing requests, and control booking availability.
 
 The project combines a premium real-estate visual identity with a practical booking workflow, responsive layouts, GSAP animations, and Supabase-powered data management.
+📸 Screenshots
+
+<img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/f7fb95b9-ea46-42d8-8db0-539457fa7f4e" />
+<img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/c1c53c88-0079-4223-a8b3-dc18e77b3ece" />
+<img width="1902" height="908" alt="Screenshot 2026-08-14 174101" src="https://github.com/user-attachments/assets/e4d93120-f742-46a3-a6a7-eeefd89eccec" />
+<img width="1902" height="897" alt="Screenshot 2026-08-14 174138" src="https://github.com/user-attachments/assets/f6af9931-8b62-45b5-b0aa-39158d080394" />
+<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/71d0832f-9caf-4df1-aaad-2369f640170b" />
+<img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/7ff94ae0-69fc-480d-b3ee-d0d76fcfb9e0" />
+<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/b44c5cb0-a264-4f3a-acc9-9e6dfb4df24a" />
+<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/437f1a70-bf22-47d5-9c6e-878aee810b11" />
+
+
 
 ✨ Features
 
@@ -71,26 +83,6 @@ Oxlint — JavaScript/TypeScript linting.
 Modern ES6+ JavaScript — Modern syntax and development practices.
 
 
-🚀 Installation and Setup
-
-Follow these steps to run the project locally:
-
-# Clone the repository
-git clone <https://github.com/israamaherzeer/PrimeNest-Realty.git>
-
-# Navigate to the project directory
-cd primenest_final
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-
-The application will then be available through the local Vite development server.
-
-
-
 
 🖥️ Admin Portal
 
@@ -122,59 +114,6 @@ Admin Dashboard Sections
 
 The admin dashboard also includes a responsive sidebar that can be opened and closed on smaller screens.
 
-🗄️ Database
-
-PrimeNest uses Supabase/PostgreSQL with the following main tables:
-
-Table
-
-Purpose
-
-profiles
-
-Stores user/admin profile information and roles.
-
-Stores real-estate agent information.
-
-properties
-
-Stores property listings and core property details.
-
-property_images
-
-Stores property image URLs and primary-image information.
-
-
-viewing_slots
-
-Stores available property viewing dates and times.
-
-viewing_requests
-
-Stores customer requests for property viewings.
-
-Database Relationships
-
-profiles
-
-Important Constraints
-
-UUID primary keys are used throughout the schema.
-
-
-amenities.name is unique.
-
-property_amenities uses a composite primary key of property_id and amenity_id.
-
-viewing_requests.slot_id is unique to prevent double booking.
-
-Foreign keys use cascading behavior where appropriate.
-
-Property types are restricted to supported values such as house, apartment, villa, condo, and townhouse.
-
-Listing types are restricted to sale and rent.
-
-Viewing request status is restricted to pending, confirmed, and cancelled.
 
 🔐 Security & Row Level Security
 
@@ -249,17 +188,6 @@ Admin filtering controls.
 Loading and submission states.
 
 Success and error feedback.
-
-📸 Screenshots
-
-<img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/f7fb95b9-ea46-42d8-8db0-539457fa7f4e" />
-<img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/c1c53c88-0079-4223-a8b3-dc18e77b3ece" />
-<img width="1902" height="908" alt="Screenshot 2026-08-14 174101" src="https://github.com/user-attachments/assets/e4d93120-f742-46a3-a6a7-eeefd89eccec" />
-<img width="1902" height="897" alt="Screenshot 2026-08-14 174138" src="https://github.com/user-attachments/assets/f6af9931-8b62-45b5-b0aa-39158d080394" />
-<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/71d0832f-9caf-4df1-aaad-2369f640170b" />
-<img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/7ff94ae0-69fc-480d-b3ee-d0d76fcfb9e0" />
-<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/b44c5cb0-a264-4f3a-acc9-9e6dfb4df24a" />
-<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/437f1a70-bf22-47d5-9c6e-878aee810b11" />
 
 
 
