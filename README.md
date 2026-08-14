@@ -252,12 +252,24 @@ Success and error feedback.
 
 📸 Screenshots
 
-<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/0ba15e65-7e38-4dbb-9ae7-4bae71064475" />
-<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/339b3167-ebb9-4de5-be1d-8274d5ad25cf" />
-<img width="1902" height="897" alt="Screenshot 2026-08-14 174138" src="https://github.com/user-attachments/assets/301f86fc-21a4-4336-890c-ea2ad74dee26" />
-<img width="1902" height="908" alt="Screenshot 2026-08-14 174101" src="https://github.com/user-attachments/assets/daf4df98-e775-4aeb-ace2-2c3510da8cdc" />
-<img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/30d4bd01-c014-41aa-b1de-3308e6945ab9" />
-<img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/51dc84b4-8c00-4a0b-a8bb-fa593801e6eb" />
+<img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/f7fb95b9-ea46-42d8-8db0-539457fa7f4e" />
+![Uploading Screenshot 2026-08-14 174101.png…]()
+<img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/c1c53c88-0079-4223-a8b3-dc18e77b3ece" />
+![Uploading Screenshot 2026-08-14 174138.png…]()
+<img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/7ff94ae0-69fc-480d-b3ee-d0d76fcfb9e0" />
+<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/b44c5cb0-a264-4f3a-acc9-9e6dfb4df24a" />
+<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/437f1a70-bf22-47d5-9c6e-878aee810b11" />
+<img width="1903" height="910" alt="Screenshot 2026-08-14 174320" src="https://github.com/user-attachments/assets/6fdd06b7-8035-4f6b-9c67-002cdb72f5d0" />
+<img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/22cb1aed-866d-4f9c-b27b-91ccdcd871ee" />
+
+
+
+
+
+
+
+
+
 
 
 
