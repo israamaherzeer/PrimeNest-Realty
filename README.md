@@ -89,114 +89,8 @@ npm run dev
 
 The application will then be available through the local Vite development server.
 
-🔐 Supabase Configuration
 
-The application uses Supabase for its backend services. Configure the required Supabase environment variables in a local environment file before running the application.
 
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-
-Never commit real credentials or service-role keys to the repository.
-
-🏗️ Build for Production
-
-To create an optimized production build:
-
-npm run build
-
-To preview the production build locally:
-
-npm run preview
-
-The project also includes a linting command:
-
-npm run lint
-
-📅 Viewing & Booking System
-
-PrimeNest includes a multi-step property viewing request flow designed to prevent stale availability and duplicate bookings.
-
-Customer Flow
-
-Open Property Details
-        ↓
-Schedule a Viewing
-        ↓
-Load available future slots
-        ↓
-Select a viewing date
-        ↓
-Select a viewing time
-        ↓
-Re-check slot availability
-        ↓
-Enter customer information
-        ↓
-Submit viewing request
-        ↓
-Request stored in Supabase
-        ↓
-Viewing slot becomes unavailable
-        ↓
-Success confirmation shown
-
-Available Slots
-
-Customers only receive viewing slots that are marked:
-
-is_available = true
-
-The booking modal also filters slots from the current date onward and refreshes the availability data after booking-related changes.
-
-Availability Re-check
-
-Before the customer proceeds after selecting a time, the application queries Supabase again to verify that the selected slot is still available.
-
-This protects the interface from stale data when another customer books the same time while the first customer still has the viewing modal open.
-
-Double-Booking Protection
-
-The database provides the final protection against concurrent booking attempts through a unique constraint on:
-
-viewing_requests.slot_id
-
-If two customers attempt to submit the same slot, the database rejects the duplicate request and the application refreshes the available slots and informs the customer that the viewing time is no longer available.
-
-Automatic Slot Update
-
-When a new viewing request is inserted, the database trigger:
-
-on_viewing_request_created
-
-executes the handle_viewing_booking() function, which immediately updates the associated slot to:
-
-is_available = false
-
-🔄 Booking Status Lifecycle
-
-The application uses the following request states:
-
-Status
-
-Meaning
-
-Available
-
-The viewing slot has no request and is_available is true.
-
-Pending
-
-A customer has submitted a viewing request and it is awaiting admin action.
-
-Confirmed
-
-The admin has confirmed the customer's viewing request.
-
-Cancelled
-
-The admin has cancelled the request.
-
-When a request is cancelled, the associated slot is made available again through the admin request-management flow, allowing customers to book that original time again.
 
 🖥️ Admin Portal
 
@@ -240,8 +134,6 @@ profiles
 
 Stores user/admin profile information and roles.
 
-agents
-
 Stores real-estate agent information.
 
 properties
@@ -252,13 +144,6 @@ property_images
 
 Stores property image URLs and primary-image information.
 
-amenities
-
-Stores available property amenities.
-
-property_amenities
-
-Connects properties with their amenities.
 
 viewing_slots
 
@@ -272,23 +157,10 @@ Database Relationships
 
 profiles
 
-agents
-  │
-  └── properties
-        │
-        ├── property_images
-        │
-        ├── property_amenities ─── amenities
-        │
-        └── viewing_slots
-                │
-                └── viewing_requests
-
 Important Constraints
 
 UUID primary keys are used throughout the schema.
 
-agents.email is unique.
 
 amenities.name is unique.
 
@@ -316,8 +188,6 @@ Public users can read property-related information such as:
 
 Properties
 
-Agents
-
 Property images
 
 Amenities
@@ -342,7 +212,7 @@ This applies to administrative management of properties, agents, images, ameniti
 
 The visual identity of PrimeNest Realty focuses on a premium and sophisticated real-estate experience.
 
-🖤 Dark Primary Color — A strong charcoal tone creates a professional foundation.
+ Dark Primary Color — A strong charcoal tone creates a professional foundation.
 
 🥂 Gold Accent — Gold is used as a refined highlight throughout the interface.
 
@@ -382,28 +252,18 @@ Success and error feedback.
 
 📸 Screenshots
 
-Add project screenshots here to showcase the main interfaces:
+<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/0ba15e65-7e38-4dbb-9ae7-4bae71064475" />
+<img width="1917" height="913" alt="Screenshot 2026-08-14 174240" src="https://github.com/user-attachments/assets/339b3167-ebb9-4de5-be1d-8274d5ad25cf" />
+<img width="1902" height="897" alt="Screenshot 2026-08-14 174138" src="https://github.com/user-attachments/assets/301f86fc-21a4-4336-890c-ea2ad74dee26" />
+<img width="1902" height="908" alt="Screenshot 2026-08-14 174101" src="https://github.com/user-attachments/assets/daf4df98-e775-4aeb-ace2-2c3510da8cdc" />
+<img width="1906" height="916" alt="Screenshot 2026-08-14 174013" src="https://github.com/user-attachments/assets/30d4bd01-c014-41aa-b1de-3308e6945ab9" />
+<img width="1892" height="908" alt="Screenshot 2026-08-14 173911" src="https://github.com/user-attachments/assets/51dc84b4-8c00-4a0b-a8bb-fa593801e6eb" />
 
-Home Page
 
-Properties Page
 
-Property Details
 
-Schedule a Viewing Modal
-
-Admin Login
-
-Admin Dashboard
-
-Viewing Slots
-
-Viewing Requests
 
 🌐 Live Demo
 
-Live Demo: [Add deployment link]
-
-👩‍💻 Author
-
-Created by: Israa Maher
+Live Demo: [Add deplo<img width="1912" height="912" alt="Screenshot 2026-08-14 174259" src="https://github.com/user-attachments/assets/acef77be-fb8c-4881-9aa7-49aeaeb9ce41" /><img width="1918" height="910" alt="Screenshot 2026-08-14 174341" src="https://github.com/user-attachments/assets/b3c25865-d9b7-4e34-b5d6-ca602da58876" />
+<img width="1903" height="910" alt="Screenshot 2026-08-14 174320" src="https://github.com/user-attachments/assets/5715ce4d-b813-410f-bebf-8cfd0eded517" />
